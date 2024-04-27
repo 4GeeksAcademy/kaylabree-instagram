@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="bg bg-light d-flex justify-content-between">
+        <div class="col-2 d-flex">
+            <i class="fa-brands fa-instagram"></i>
+            <p class="pt-1">Instagram</p>
+     
+        </div>
+        <div class = "d-flex justify-content-end">
+            <!--Modal Button-->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create New Post
+              </button>
+            <!--Drop Down-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessablility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Log Out</a></li>
+                </ul>
+              </li>
+        </div>
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Caption
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <!--Switch-->
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+  
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <!-- view 1 -->
+            <div class="container text-center">
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=1" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=2" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=3" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=4" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=5" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=6" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=7" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=8" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=9" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <!-- view 2 -->
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <!--Card 1-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>Its the best day ever!</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=1" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">500 likes</h5>    
+                            <p class="card-text">Example description for project/p>
+                            </div>
+                        </div>
+                        <!--Card 2-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>The Secret Formula</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=2" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">355 likes</h5>    
+                            <p class="card-text">Random text description for project</p>
+                            </div>
+                        </div>
+                        <!--Card 3-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>Krusty Krab Pizza</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=3" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">1,000 likes</h5>    
+                            <p class="card-text">Random text description for project</p>
+                            </div>
+                        </div>
+                        <!--Card 4-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>I wanna go hoome</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=4" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">400 likes</h5>    
+                            <p class="card-text">random text description for project</p>
+                            </div>
+                        </div>
+                        <!--Card 5-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>Jellyfish fields</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=5" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">475 likes</h5>    
+                            <p class="card-text">Random text Description for project</p>
+                            </div>
+                        </div>
+                        <!--Card 6-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>Bikini Bottom</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=6" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">660 likes</h5>    
+                            <p class="card-text">Random text Description for project</p>
+                            </div>
+                        </div>
+                        <!--Card 7-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>My leg</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=7" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">980 likes</h5>    
+                            <p class="card-text">Random text Description for project</p>
+                            </div>
+                        </div>
+                        <!--Card 8-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>Chum Bucket</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=8" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">578 likes</h5>    
+                            <p class="card-text">Random text Description for project</p>
+                            </div>
+                        </div>
+                        <!--Card 9-->
+                        <div class="card mt-3" style="width: 18rem;">
+                            <div class="card-header">
+                                <h5 class="card-title d-flex justify-content-between">
+                                    <span>Sandy's Dome</span>
+                                    <span>04/27</span>
+                                </h5>
+                            </div>
+                            <img src="https://picsum.photos/200/200?random=9" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class = "card-text">372 likes</h5>    
+                            <p class="card-text"> Random text Description for project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-4">
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a78bdfbc35.js" crossorigin="anonymous"></script>
+</body>
+</html>
